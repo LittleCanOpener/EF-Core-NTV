@@ -37,7 +37,7 @@
         <h3>Microsoft Visual Studio & Visual Studio Code</h3>
         <p>Download Here <a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio</a>:<br>
         <h1>Why Microsoft Visual Studio Code?</h1>
-    <img src="./StudentManagement/assets/images/icons/VisualStudio.png" width="80px" height="80x" alt="git logo"><br>  
+    <img src="./StudentManagement/assets/images/icons/VisualStudio.png" width="80px" height="80x" alt="MS VSCODE logo"><br>  
     <ul>
         <li>
             <strong>Lightweight and Fast:</strong> 
@@ -76,8 +76,8 @@
         </li>
     </ul>
         <h1>Why Visual Studio Code?</h1>
-    <img src="../StudentManagement/assets/images/icons/VsCode.png" width="80px" 
-        height="80x" alt="git logo"><br>
+    <img src="./StudentManagement/assets/images/icons/VsCode.png" width="80px" 
+        height="80x" alt="VSCODE logo"><br>
     <ul>
         <li>
             <strong>Lightweight and Fast:</strong> 
