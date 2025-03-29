@@ -76,7 +76,7 @@
         </li>
     </ul>
         <h1>Why Visual Studio Code?</h1>
-    <img src="./StudentManagement/assets/images/icons/VsCode.png" width="80px" 
+    <img src="/StudentManagement/assets/images/icons/VsCode.png" width="80px" 
         height="80x" alt="git logo"><br>
     <ul>
         <li>
