@@ -13,7 +13,7 @@
 <ul>
     <h2>Using Github Pages</h2>
     <li>
-        Navigate to the GitHub <a href="#" target="_blank">Repository</a>:
+        Navigate to the GitHub <a href="https://github.com/LittleCanOpener/EF-Core-NTV/tree/main" target="_blank">Repository</a>:
     </li>
     <li>
         Click the 'Settings' Tab.
