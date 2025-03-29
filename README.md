@@ -1,5 +1,5 @@
 # EF-Core-NTV
-<img src="assets/images/screenshots/image.png" alt="ERD"><br>
+<img src="./StudentManagement/assets/images/screenshots/image.png" alt="ERD"><br>
 <h2>Terminal commands and Results</h2>
   <details> 
       <summary>Terminal Command <small><strong>(Click me)</strong></small></summary>
