@@ -3,11 +3,11 @@
 <h2>Terminal commands and Results</h2>
   <details> 
       <summary>Terminal Command <small><strong>(Click me)</strong></small></summary>
-      <img src="./assets/images/screenshots/dotnet-run.png" alt="example of command to run in terminal"><br>
+      <img src="./StudentManagement/assets/images/screenshots/dotnet-run.png" alt="example of command to run in terminal"><br>
   </details>
   <details>
       <summary>Terminal Result <small><strong>(Click me)</strong></small></summary>
-      <img src="./assets/images/screenshots/dotnet-result.png" alt="the result of the terminal command"><br>
+      <img src="./StudentManagement/assets/images/screenshots/dotnet-result.png" alt="the result of the terminal command"><br>
   </details>
 <h1>Deployment</h1>
 <ul>
@@ -37,7 +37,7 @@
         <h3>Microsoft Visual Studio & Visual Studio Code</h3>
         <p>Download Here <a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio</a>:<br>
         <h1>Why Microsoft Visual Studio Code?</h1>
-    <img src="assets/images/icons/VisualStudio.png" width="80px" height="80x" alt="git logo"><br>  
+    <img src="./StudentManagement/assets/images/icons/VisualStudio.png" width="80px" height="80x" alt="git logo"><br>  
     <ul>
         <li>
             <strong>Lightweight and Fast:</strong> 
@@ -76,7 +76,7 @@
         </li>
     </ul>
         <h1>Why Visual Studio Code?</h1>
-    <img src="assets/images/icons/VsCode.png" width="80px" 
+    <img src="./StudentManagement/assets/images/icons/VsCode.png" width="80px" 
         height="80x" alt="git logo"><br>
     <ul>
         <li>
@@ -119,21 +119,21 @@
     </li>
     <li>
         <h3>Git</h3><p>
-        <img src="assets/images/icons/git.png" width="40px" height="40x" alt="git logo"><br>
+        <img src="./StudentManagement/assets/images/icons/git.png" width="40px" height="40x" alt="git logo"><br>
         Why <a href="https://git-scm.com/" target="_blank">Git</a>:<br>
         Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear development.
         </p><hr>
     </li>
     <li>
         <h3>Github</h3><p>
-        <img src="assets/images/icons/github.png" width="40px" height="40x" alt="github logo"><br>
+        <img src="./StudentManagement/assets/images/icons/github.png" width="40px" height="40x" alt="github logo"><br>
         Why <a href="https://github.com/" target="_blank">Github</a>:<br>
         Well It's used for storing, tracking, and collaborating on software projects. It makes it easy for developers to share code files and collaborate with fellow developers on open-source projects. GitHub also serves as a social networking site where developers can openly network, collaborate, and pitch their work 
         </p><hr>
     </li>
     <li>
         <h3>C#</h3><p>
-        <img src="assets/images/icons/Csharp.png" width="40px" height="40x" alt="C#"><br>
+        <img src="./StudentManagement/assets/images/icons/Csharp.png" width="40px" height="40x" alt="C#"><br>
         Why <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">C#</a>:<br>
         <ul>
             <li>
@@ -168,7 +168,7 @@
         </p><hr>
         <li>
         <h3>.NET</h3><p>
-        <img src="assets/images/icons/Dotnet.png" width="40px" height="40x" alt=".NET logo"><br>
+        <img src="./StudentManagement/assets/images/icons/Dotnet.png" width="40px" height="40x" alt=".NET logo"><br>
         Why <a href="https://dotnet.microsoft.com/en-us/" target="_blank">.NET</a>:<br>
         <ul>
             <li>
