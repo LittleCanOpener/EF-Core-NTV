@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 200px;
+            padding: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #response, #studentList {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Management</h1>
+    <h2>Add a Student</h2>
+    <form id="studentForm">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="groupId">Group ID:</label>
+            <input type="number" id="groupId" name="groupId" required>
+        </div>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <div id="response"></div>
+
+    <h2>Student List</h2>
+    <button id="listStudents">List Students</button>
+    <div id="studentList"></div>
+
+    <script>
+        // Add a student
+        document.getElementById('studentForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const groupId = parseInt(document.getElementById('groupId').value);
+
+            const student = {
+                firstName: firstName,
+                lastName: lastName,
+                groupId: groupId
+            };
+
+            try {
+                const response = await fetch('http://localhost:5000/api/students', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(student)
+                });
+
+                const responseDiv = document.getElementById('response');
+                if (response.ok) {
+                    const result = await response.json();
+                    responseDiv.style.display = 'block';
+                    responseDiv.style.backgroundColor = '#d4edda';
+                    responseDiv.innerHTML = `<strong>Success!</strong> Student added: ${JSON.stringify(result)}`;
+                } else {
+                    responseDiv.style.display = 'block';
+                    responseDiv.style.backgroundColor = '#f8d7da';
+                    responseDiv.innerHTML = `<strong>Error!</strong> Failed to add student: ${response.statusText}`;
+                }
+            } catch (error) {
+                const responseDiv = document.getElementById('response');
+                responseDiv.style.display = 'block';
+                responseDiv.style.backgroundColor = '#f8d7da';
+                responseDiv.innerHTML = `<strong>Error!</strong> ${error.message}`;
+            }
+        });
+
+        // List students
+        document.getElementById('listStudents').addEventListener('click', async () => {
+            try {
+                const response = await fetch('http://localhost:5000/api/students');
+                const studentListDiv = document.getElementById('studentList');
+
+                if (response.ok) {
+                    const students = await response.json();
+                    studentListDiv.style.display = 'block';
+                    studentListDiv.style.backgroundColor = '#d4edda';
+                    studentListDiv.innerHTML = '<strong>Students:</strong><br>' + 
+                        (students.length > 0 
+                            ? students.map(s => `ID: ${s.studentId}, Name: ${s.firstName} ${s.lastName}, Group ID: ${s.groupId}`).join('<br>')
+                            : 'No students found.');
+                } else {
+                    studentListDiv.style.display = 'block';
+                    studentListDiv.style.backgroundColor = '#f8d7da';
+                    studentListDiv.innerHTML = `<strong>Error!</strong> Failed to fetch students: ${response.statusText}`;
+                }
+            } catch (error) {
+                const studentListDiv = document.getElementById('studentList');
+                studentListDiv.style.display = 'block';
+                studentListDiv.style.backgroundColor = '#f8d7da';
+                studentListDiv.innerHTML = `<strong>Error!</strong> ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

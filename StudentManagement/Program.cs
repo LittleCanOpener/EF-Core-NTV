@@ -1,26 +1,61 @@
-﻿using StudentManagement.Models;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using StudentManagement.Data;
+using StudentManagement.Repositories;
+using Swashbuckle.AspNetCore.Filters;
 
-class Program
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+builder.Services.AddDbContext<SchoolDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IGroupRepository, GroupRepository>();
+builder.Services.AddScoped<IMarkRepository, MarkRepository>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
+builder.Services.AddScoped<ISubjectTeacherRepository, SubjectTeacherRepository>();
+builder.Services.AddScoped<ITeacherRepository, TeacherRepository>();
+
+builder.Services.AddCors(options =>
 {
-    static void Main(string[] args)
+    options.AddPolicy("AllowAll", builder =>
     {
-        var student = new Student
-        {
-            StudentId = 1,
-            FirstName = "John",
-            LastName = "Doe",
-            GroupId = 1
-        };
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
-        var group = new Group
-        {
-            GroupId = 1,
-            Name = "Group A",
-            Students = new List<Student> { student }
-        };
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "Student Management API", Version = "v1" });
+    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
+    c.ExampleFilters(); // This enables the example filters
+});
+builder.Services.AddSwaggerGenNewtonsoftSupport();
 
-        student.Group = group;
+// Register the example providers explicitly
+builder.Services.AddSwaggerExamplesFromAssemblyOf<Program>();
 
-        Console.WriteLine($"Student: {student.FirstName} {student.LastName}, Group: {student.Group.Name}");
-    }
-}
+var app = builder.Build();
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Student Management API V1");
+    c.RoutePrefix = "swagger";
+});
+
+app.UseStaticFiles();
+app.UseCors("AllowAll");
+app.MapControllers();
+
+app.Run();

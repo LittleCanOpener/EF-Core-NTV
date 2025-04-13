@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "3+COqzbLaEFAQO0aCScRAZGlOgCyDEP4NyNBkYU6ZgU=",
+  "Source": "StudentManagement",
+  "BasePath": "_content/StudentManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StudentManagement\\wwwroot",
+      "Source": "StudentManagement",
+      "ContentRoot": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\",
+      "BasePath": "_content/StudentManagement",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\obj\\Debug\\net9.0\\compressed\\s1jjjf8bbb-63khpa1o59.gz",
+      "SourceId": "StudentManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/StudentManagement",
+      "RelativePath": "index#[.{fingerprint=63khpa1o59}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "idm7ps47qs",
+      "Integrity": "+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\index.html",
+      "SourceId": "StudentManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\",
+      "BasePath": "_content/StudentManagement",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "63khpa1o59",
+      "Integrity": "8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.63khpa1o59.html",
+      "AssetFile": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\obj\\Debug\\net9.0\\compressed\\s1jjjf8bbb-63khpa1o59.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000735835173"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1358"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 15:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "63khpa1o59"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs="
+        }
+      ]
+    },
+    {
+      "Route": "index.63khpa1o59.html",
+      "AssetFile": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 15:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "63khpa1o59"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs="
+        }
+      ]
+    },
+    {
+      "Route": "index.63khpa1o59.html.gz",
+      "AssetFile": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\obj\\Debug\\net9.0\\compressed\\s1jjjf8bbb-63khpa1o59.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 15:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "63khpa1o59"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\obj\\Debug\\net9.0\\compressed\\s1jjjf8bbb-63khpa1o59.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000735835173"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1358"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 15:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 15:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8rC14ylqCiM1N72VFsdihLmIAh9kTla2ccXj8ODHBFs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\hrafn\\EF-CORE-NTV\\StudentManagement\\obj\\Debug\\net9.0\\compressed\\s1jjjf8bbb-63khpa1o59.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 06 Apr 2025 15:05:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+unVA/pFlPSCoaoHxo6zqLZr/s4ZvMIgy0SAYRmLX+c="
+        }
+      ]
+    }
+  ]
+}
